@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réveillon Viale Cataratas 2026 - Pacote Exclusivo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* --- VARIÁVEIS DE CORES (Baseadas no anexo) --- */
+        :root {
+            --cor-primaria: #5C4B41; /* Marrom Café */
+            --cor-secundaria: #E6E6E6; /* Bege/Cinza Claro */
+            --cor-destaque: #C99353; /* Dourado/Mostarda - Para Botões */
+            --cor-texto: #333333;
+            --cor-branco: #FFFFFF;
+        }
+
+        /* --- RESET GERAL --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--cor-texto); line-height: 1.6; background-color: var(--cor-secundaria); }
+        h1, h2, h3 { family: 'Playfair Display', serif; color: var(--cor-primaria); margin-bottom: 15px; }
+        img { max-width: 100%; height: auto; }
+        a { text-decoration: none; }
+
+        /* --- BOTÕES (CTA) --- */
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--cor-destaque);
+            color: var(--cor-branco);
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(201, 147, 83, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(201, 147, 83, 0.6);
+            background-color: #b07d42;
+        }
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(201, 147, 83, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(201, 147, 83, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(201, 147, 83, 0); }
+        }
+
+        /* --- HEADER / HERO SECTION --- */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('fundo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+        .logo-img {
+            max-width: 300px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+        }
+        header h1 {
+            color: white; /* Override color for header */
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            color: #f0f0f0;
+        }
+
+        /* --- CONTAINER GERAL --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* --- DESTAQUES (ICON BOXES) --- */
+        .destaques {
+            background-color: white;
+            margin-top: -50px;
+            position: relative;
+            z-index: 3;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+        .destaque-item {
+            text-align: center;
+        }
+        .destaque-item i {
+            font-size: 2.5rem;
+            color: var(--cor-destaque);
+            margin-bottom: 15px;
+        }
+        .destaque-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .destaque-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* --- CRONOGRAMA --- */
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--cor-destaque);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .date-badge {
+            background: var(--cor-primaria);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .card ul {
+            list-style: none;
+        }
+        .card ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .card ul li::before {
+            content: '•';
+            color: var(--cor-destaque);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .highlight-text {
+            color: var(--cor-destaque);
+            font-weight: 700;
+        }
+
+        /* --- MENU GASTRO --- */
+        .gastronomia-section {
+            background-color: var(--cor-primaria);
+            color: white;
+        }
+        .gastronomia-section h2, .gastronomia-section h3 {
+            color: var(--cor-destaque);
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .menu-col h3 {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+        .menu-item {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #ddd;
+        }
+
+        /* --- FESTA VIRADA --- */
+        .festa-section {
+            background: linear-gradient(to right, #ffffff, #f9f9f9);
+        }
+        .drink-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .drink-tag {
+            background: #EFEFEF;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+
+        /* --- AVISOS --- */
+        .aviso-box {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .destaques { grid-template-columns: 1fr; margin-top: 0; }
+            .card-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-content">
+            <img src="logo.png" alt="Logo Réveillon Viale Cataratas" class="logo-img">
+            
+            <h1>Celebre a Chegada de 2026</h1>
+            <p>Pacote All Inclusive • Gastronomia Internacional • Festas Temáticas</p>
+            
+            <a href="https://wa.me/554521057240?text=Ol%C3%A1!+Vi+o+site+do+R%C3%A9veillon+2026+e+gostaria+de+garantir+meu+pacote." class="btn-cta btn-pulse" target="_blank">
+                <i class="fab fa-whatsapp"></i> Quero Reservar Agora
+            </a>
+            <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">Mínimo de 03 Noites | Vagas Limitadas</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="destaques">
+            <div class="destaque-item">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Open Bar Premium</h3>
+                <p>Whisky 12 anos, Vinhos, Heineken, Stella e Drinks inclusos nas festas.</p>
+            </div>
+            <div class="destaque-item">
+                <i class="fas fa-utensils"></i>
+                <h3>Alta Gastronomia</h3>
+                <p>Jantares temáticos (Mediterrâneo e Árabe) e Ceia de Gala com frutos do mar.</p>
+            </div>
+            <div class="destaque-item">
+                <i class="fas fa-music"></i>
+                <h3>Atrações Musicais</h3>
+                <p>Banda Alabama, DJs e Voz e Violão animando todos os dias.</p>
+            </div>
+            <div class="destaque-item">
+                <i class="fas fa-child"></i>
+                <h3>Diversão Família</h3>
+                <p>Ilha Infantil e Recreação diária para os pequenos.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="section-title">
+            <h2>Programação Exclusiva</h2>
+            <p>Preparamos uma jornada inesquecível para você.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-calendar-alt"></i> O Esquenta</h3>
+                <span class="date-badge">29 e 30 de Dezembro</span>
+            </div>
+            <p>Jantares no Restaurante (19h às 22h) com <strong>Bebidas Inclusas</strong>.</p>
+            <br>
+            <ul>
+                <li><strong>Dia 29:</strong> Jantar com Ilha Mediterrânea.</li>
+                <li><strong>Dia 30:</strong> Jantar com Ilha Árabe.</li>
+                <li><strong>Para Crianças:</strong> Ilha Infantil disponível (Opcional R$ 120,00).</li>
+            </ul>
+        </div>
+
+        <div class="card" style="border-left-color: var(--cor-primaria);">
+            <div class="card-header">
+                <h3><i class="fas fa-star"></i> O Grande Dia - 31/12</h3>
+                <span class="date-badge" style="background-color: var(--cor-destaque);">Festival Gastronômico</span>
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <h4 class="highlight-text">Tarde & Happy Hour (Piscina)</h4>
+                <ul>
+                    <li><strong>16h30 - 18h30:</strong> Festival da Pizza com DJ.</li>
+                    <li><strong>19h00 - 22h30:</strong> Happy Hour Menu Boteco com Voz e Violão.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 class="highlight-text">Jantar Especial de Gala (Restaurante)</h4>
+                <p><em>Turnos: 19h00 às 20h30 | 21h00 às 22h30 (Reserva Necessária)</em></p>
+                <p>Um menu completo com Tournedos de Mignon, Porchetta, Salmão, Camarão ao Catupiry e Paella Valenciana.</p>
+            </div>
+
+            <div class="aviso-box">
+                <i class="fas fa-exclamation-circle"></i> <strong>Importante:</strong> É necessário reservar o horário do jantar antecipadamente. Mesas compartilhadas.
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="https://wa.me/554521057240?text=Ol%C3%A1!+Vi+o+site+do+R%C3%A9veillon+2026+e+gostaria+de+garantir+meu+pacote." class="btn-cta">
+                Verificar Disponibilidade
+            </a>
+        </div>
+    </section>
+
+    <section class="gastronomia-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu da Virada</h2>
+                <p style="color: #ccc;">Uma seleção de pratos nobres para uma noite perfeita.</p>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-col">
+                    <h3>Entradas & Frios</h3>
+                    <div class="menu-item">Ceviche de Peixe</div>
+                    <div class="menu-item">Lentilha de Puy com Salmão Defumado</div>
+                    <div class="menu-item">Torre de palmito com castanhas</div>
+                    <div class="menu-item">Terrine Caprese</div>
+                    <div class="menu-item">Endívias com gorgonzola e mel</div>
+                    <div class="menu-item">Mesa de frios e Charcutaria</div>
+                </div>
+
+                <div class="menu-col">
+                    <h3>Pratos Principais</h3>
+                    <div class="menu-item"><strong>Tournedos de Mignon ao Vinho do Porto</strong></div>
+                    <div class="menu-item">Porchetta à pururuca</div>
+                    <div class="menu-item">Salmão ao molho siciliano</div>
+                    <div class="menu-item"><strong>Camarão ao molho Catupiry</strong></div>
+                    <div class="menu-item">Paella Valenciana</div>
+                    <div class="menu-item">Sofioti de shitake</div>
+                </div>
+
+                <div class="menu-col">
+                    <h3>Sobremesas & Madrugada</h3>
+                    <div class="menu-item">Tartelette de morango e uvas</div>
+                    <div class="menu-item">Pavlova de frutas vermelhas</div>
+                    <div class="menu-item">Cheesecake e Mousses</div>
+                    <div class="menu-item">Doces Finos</div>
+                    <div style="margin-top: 15px; color: var(--cor-destaque);"><strong>01h30: Caldos e Massas</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="festa-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>A Festa da Virada</h2>
+                <p>Salão de Eventos | Das 20h às 03h</p>
+            </div>
+
+            <div class="card" style="text-align: center; border: none; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                <i class="fas fa-glass-martini-alt" style="font-size: 3rem; color: var(--cor-destaque); margin-bottom: 20px;"></i>
+                <h3 style="font-size: 1.8rem;">Open Bar & Atrações</h3>
+                
+                <p style="font-size: 1.2rem; margin: 20px 0;">
+                    Animação com <strong>DJ</strong> (20h-23h) e <strong>Banda Alabama</strong> (23h-03h)
+                </p>
+
+                <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+                    <h4>Bebidas Incluídas:</h4>
+                    <div class="drink-list">
+                        <span class="drink-tag">Whisky 12 Anos</span>
+                        <span class="drink-tag">Vinho</span>
+                        <span class="drink-tag">Heineken & Stella</span>
+                        <span class="drink-tag">Espumante</span>
+                        <span class="drink-tag">Gin</span>
+                        <span class="drink-tag">Moscow Mule</span>
+                        <span class="drink-tag">Caipirinhas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aviso-box" style="background-color: #f1f1f1; color: #555;">
+                <small>*No dia 31/12, o Bar da piscina funciona até às 16h. Não haverá Room Service à noite.</small>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2 style="color: var(--cor-destaque);">Viale Cataratas</h2>
+            <p>Garanta seu lugar na melhor virada de Foz do Iguaçu.</p>
+            <br>
+            <a href="https://wa.me/554521057240?text=Ol%C3%A1!+Vi+o+site+do+R%C3%A9veillon+2026+e+gostaria+de+garantir+meu+pacote." class="btn-cta btn-pulse">
+                <i class="fab fa-whatsapp"></i> Falar com Consultor
+            </a>
+            <br><br><br>
+            <p>© 2025 Viale Cataratas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
